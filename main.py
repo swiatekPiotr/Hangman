@@ -1,11 +1,17 @@
 import string
 import random
+from translate import translate_word
 from randomly import randoml
 from display import displays
 
 
 
 def main():
+    try:
+        print(translate_word())
+    except AttributeError:
+        print("Group ERROR, can't translate the phrase")
+
     randomly = randoml()
     print("Try to guess any letter:")
     word = ["_" for i in range(len(randomly))]
