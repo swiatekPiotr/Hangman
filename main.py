@@ -1,6 +1,7 @@
 import string
 import random
 from randomly import randoml
+from display import displays
 
 
 
@@ -15,6 +16,7 @@ def main():
         letters.append(random.choice(string.ascii_uppercase))
     letters = " ".join(set(letters))
     print(letters)
+    displays(randomly, word, letters)
 
 
 if __name__ == "__main__":
