@@ -22,7 +22,8 @@ def main():
         letters.append(random.choice(string.ascii_uppercase))
     letters = " ".join(set(letters))
     print(letters)
-    displays(randomly, word, letters)
+    guessCount = 0
+    displays(randomly, word, letters, guessCount)
 
 
 if __name__ == "__main__":
